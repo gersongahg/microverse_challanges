@@ -8,20 +8,72 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <style>
+      .surv{
+        background-color: beige;
+        padding: 50px;
+        border-radius: 5%;
+      }
+      
+      .names > {
+        align-content: left;
+      }
+        body {
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        input[type=text], select {
+            width: 100%;
+            padding-left: 0px;
+            margin: 8px 0;
+            
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            align-items: right;
+            
+}
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+        .title{
+          text-align: center;
+        }
+       
+    </style>
+    <div clas="title">
+      <h1>Microverse Trials</h1>
+      <h2>Survey for Microverse applicants</h2>
+    </div>
+    <div class="surv">
+      <form action="survey">
+        <div class="names"> 
+        <label for="name">Name</label>
+        <input type="text" id="name" name="firstname" placeholder="Your name..">
 
-    <!--
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+       </div>
 
-    Hello Camper!
+       <div class="age">
+        <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+        <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+       </div>
+      </form>
+    </div>
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
 
-    - The freeCodeCamp Team
 
-    --> 
-    <h1>hello</h1>
+
     <script  src="js/index.js"></script>
   </body>
 </html>
